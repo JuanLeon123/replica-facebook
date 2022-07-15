@@ -173,6 +173,9 @@ body {
 footer {
     padding-top: 8px;
     background-color: var(--blanco);
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(3, 50px);
 }
 
 li {
@@ -184,16 +187,15 @@ li {
 .footer {
     display: flex;
     align-items: center;
-    margin: auto;
-    width: 980px;
+    justify-content: center;
 }
 
-#list {
-    display: flex;
+.list li{
+    display: inline-block;
 }
 
 #line-2 {
     border-bottom: 1px solid var(--color-line);
-    margin: 20px 16px 0 16px;
+    margin: 20px 16px;
     width: 90%;
 }
